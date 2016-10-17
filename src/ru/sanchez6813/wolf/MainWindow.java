@@ -23,7 +23,7 @@ public class MainWindow {
         JFrame frame = new JFrame();
         frame.setVisible(true);
         frame.setResizable(false);
-        frame.setTitle("Galaxian");
+        frame.setTitle("Wolf");
         frame.setBounds(100, 100, 750, 550);
         // Приложение должно завершиться после закрытия окна
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
