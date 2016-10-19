@@ -19,9 +19,4 @@ public abstract class DrawableObject {
         x += xVelocity;
         y += yVelocity;
     }
-
-    public boolean isIntersects(DrawableObject target) {
-        return (x + width) >= target.x && x <= (target.x + target.width) &&
-                (y + height) >= target.y && y <= (target.y + target.height);
-    }
 }
