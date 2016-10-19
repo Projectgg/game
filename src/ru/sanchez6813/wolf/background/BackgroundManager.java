@@ -47,10 +47,10 @@ public class BackgroundManager extends BaseManager {
     public void update() {
         for (Star star : stars) {
             star.update();
-            star.y += Star.SPEED;
-            if (star.y > height) {
-                star.x = RandomUtils.nextInt(width);
-                star.y = 0;
+            star.x += Star.SPEED;
+            if (star.x > width) {
+                star.x = 0;
+                star.y = RandomUtils.nextInt(height);
             }
         }
     }

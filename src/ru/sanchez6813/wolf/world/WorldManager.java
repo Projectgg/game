@@ -72,6 +72,13 @@ public class WorldManager extends BaseManager {
         if (!keys[KeyEvent.VK_LEFT] && keys[KeyEvent.VK_RIGHT]) {
             player.xVelocity = Player.DEFAULT_X_VELOCITY;
         }
+        if (keys[KeyEvent.VK_UP]){
+                player.y -= 10;
+
+        }
+        if (!keys[KeyEvent.VK_UP]){
+            player.y = height - player.height;
+        }
     }
 
     public void keyPressed(KeyEvent keyEvent) {

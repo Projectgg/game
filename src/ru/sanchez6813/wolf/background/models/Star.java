@@ -13,7 +13,7 @@ public class Star extends DrawableObject {
     // =============================================================================================
     // CONSTANTS
     // =============================================================================================
-    public static final int SPEED = 2;
+    public static final int SPEED = 10;
     private static final int SIZE = 3;
     private static final int MIN_UPDATE_TO_CHANGE_VISIBILITY = 5;
     private static final int MAX_UPDATE_TO_CHANGE_VISIBILITY = 15;

@@ -9,13 +9,10 @@ import java.awt.*;
  * Created by Alex on 17.10.2016.
  */
 public class Player extends DrawableObject {
-    public static final int DEFAULT_X_VELOCITY = 3;
+    public static final int DEFAULT_X_VELOCITY = 10;
 
     private Image sprite;
 
-    public int getCenterX() {
-        return x + width / 2;
-    }
 
     public Player() {
         sprite = ResourcesLoader.loadDrawableIgnoreErrors("player_ship.png");
