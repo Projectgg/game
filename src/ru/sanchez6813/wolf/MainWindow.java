@@ -24,7 +24,7 @@ public class MainWindow {
         frame.setVisible(true);
         frame.setResizable(false);
         frame.setTitle("Wolf");
-        frame.setBounds(100, 100, 750, 550);
+        frame.setBounds(100, 100, 800, 500);
         // Приложение должно завершиться после закрытия окна
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 

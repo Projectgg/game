@@ -54,6 +54,9 @@ public class WorldManager extends BaseManager {
 
     private void updatePlayer() {
         player.move();
+        if (player.y >= height - player.height) {
+            player.y = height - player.height;
+        }
         if (player.x < 0) {
             player.x = 0;
         } else if (player.x + player.width > width) {
@@ -73,11 +76,11 @@ public class WorldManager extends BaseManager {
             player.xVelocity = Player.DEFAULT_X_VELOCITY;
         }
         if (keys[KeyEvent.VK_UP]){
-                player.y -= 10;
+                player.yVelocity = -10;
 
         }
         if (!keys[KeyEvent.VK_UP]){
-            player.y = height - player.height;
+            player.yVelocity = 10;
         }
     }
 

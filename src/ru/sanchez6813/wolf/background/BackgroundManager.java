@@ -48,8 +48,8 @@ public class BackgroundManager extends BaseManager {
         for (Star star : stars) {
             star.update();
             star.x += Star.SPEED;
-            if (star.x > width) {
-                star.x = 0;
+            if (star.x < 0) {
+                star.x = width;
                 star.y = RandomUtils.nextInt(height);
             }
         }
