@@ -16,6 +16,7 @@ public class MainWindow {
                 new MainWindow();
             }
         });
+
     }
 
     private MainWindow() {
